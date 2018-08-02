@@ -3,7 +3,7 @@ const todoController = require('./controllers/todoController');
 let app = express();
 
 // Set up Template Engine
-app.set('view engine', 'mustache');
+app.set('view engine', 'ejs');
 
 // Serve Static Files
 app.use(express.static('./public'));
