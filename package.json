@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/saketk21/TODO-App#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3"
   }
 }
