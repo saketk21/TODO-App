@@ -8,20 +8,19 @@
   <link rel="shortcut icon" type="image/png" href="/assets/logo.png">
   <link rel="stylesheet" href="/assets/style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/client-side.js" charset="utf-8"></script>
 </head>
 <body>
   <div id="todo-table">
-    <h1><img src="/assets/logo1.png" alt="Logo" width="40px" height="40px">&nbsp;&nbsp;TODO-App</h1>
+    <h1><img src="/assets/logo.png" alt="Logo" width="40px" height="40px">&nbsp;&nbsp;TODO-App</h1>
     <form>
       <input type="text" name="item" placeholder="Add New Item" required>
       <button type="submit">Add Item</button>
     </form>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
+      <% for(var i = 0; i < todos.length; i++) { %>
+        <li><%= todos[i].item %></li>
+      <% } %>
     </ul>
   </div>
 </body>
