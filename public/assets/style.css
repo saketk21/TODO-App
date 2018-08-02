@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 body {
   background: #0d1521;
   font-family: "Roboto", "Tahoma", sans-serif;
   color: #989898;
+}
+
+h1 {
+  color: white;
+  letter-spacing: 3px;
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #todo-table {
@@ -32,7 +43,7 @@ input[type="text"] {
 
 button {
   padding: 20px;
-  width: 30%;
+  width: 26.5%;
   float: left;
   background: #23282e;
   border: 0;
@@ -61,10 +72,4 @@ li {
 li:hover {
   text-decoration: line-through;
   background: rgba(0,0,0,0.2);
-}
-
-h1 {
-  background: url("/logo.png") no-repeat center;
-  margin-bottom: 0;
-  text-indent: -10000px;
 }
