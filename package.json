@@ -1,0 +1,26 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "TODO Application made in NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saketk21/TODO-App.git"
+  },
+  "keywords": [
+    "TODO",
+    "NodeJS"
+  ],
+  "author": "me",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/saketk21/TODO-App/issues"
+  },
+  "homepage": "https://github.com/saketk21/TODO-App#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
