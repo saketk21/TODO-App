@@ -1,19 +1,8 @@
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+let Todo = require('../models/todoModel');
 
 // let data = [{item: "Get Milk"}, {item: "Walk Dog"}, {item: "Kick some coding ass!"}];
 let urlencodedParser = bodyParser.urlencoded({extended: false});
-
-// Connecting to the DB
-mongoose.connect("mongodb://saketk21:saket123@ds163781.mlab.com:63781/todo");
-
-// Schema for the Documents in the Collection
-let todoItemSchema = new mongoose.Schema({
-  item: String
-});
-
-// Model for the Collection
-let Todo = mongoose.model('Todo', todoItemSchema);
 
 module.exports = function(app) {
   app.get('/todo', function(request, response) {
